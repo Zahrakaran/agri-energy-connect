@@ -1,0 +1,69 @@
+@using Agri_EnergyConnect.Services
+@inject FileService fileService
+
+@{
+    // This must be a constant or public static string in HomeController
+    string carousel_images_folder = "images/carousel"; // Update if necessary
+    var relFilePaths = fileService.GetFilePaths(carousel_images_folder);
+
+    var slideCaptions = new List<(string Title, string Description)>
+    {
+        ("Welcome to Agri-Energy Connect",
+         "Agri-Energy Connect bridges the gap between agriculture and renewable energy, offering tools, insights, and resources that help farmers optimize energy usage, reduce costs, and protect the planet."),
+        ("Monitor Your Energy Usage",
+         "Get detailed insights into your farm’s energy consumption to make smarter, more sustainable decisions."),
+        ("Access Renewable Energy Resources",
+         "Learn about solar, wind, and other clean energy sources tailored for your agricultural needs."),
+        ("Optimize Operational Costs",
+         "Use data and smart recommendations to reduce utility bills and improve efficiency."),
+        ("Connect with Experts",
+         "Engage with energy consultants, agronomists, and other professionals in our growing network."),
+        ("Track Environmental Impact",
+         "Visualize how your farm contributes to a greener future by reducing carbon emissions."),
+        ("Collaborate & Share Solutions",
+         "Join forums and events to share innovations and learn from other eco-conscious farmers.")
+    };
+}
+
+<!-- HTML Section (outside Razor code block) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="~/css/carousel.css" />
+
+<div id="carouselExampleCaptions" class="carousel slide mt-4 mb-5">
+    <div class="carousel-indicators">
+        @for (int i = 0; i < relFilePaths.Count && i < slideCaptions.Count; i++)
+        {
+            <button type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="@i"
+                    class="@(i == 0 ? "active" : "")"
+                    aria-label="Slide @(i + 1)">
+            </button>
+        }
+    </div>
+
+    <div class="carousel-inner">
+        @for (int index = 0; index < relFilePaths.Count && index < slideCaptions.Count; index++)
+        {
+            var caption = slideCaptions[index];
+            <div class="carousel-item @(index == 0 ? "active" : "")">
+                <img src="@relFilePaths[index]" asp-append-version="true" class="d-block w-100" alt="Slide @(index + 1)">
+                <div class="carousel-caption">
+                    <h3>@caption.Title</h3>
+                    <p>@caption.Description</p>
+                </div>
+            </div>
+        }
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

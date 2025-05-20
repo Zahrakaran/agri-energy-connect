@@ -1,0 +1,38 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model IEnumerable<Agri_EnergyConnect.Models.Product> 
+
+<h2>Filter Products</h2>
+
+<form method="get" asp-action="FilterProducts">
+    <input type="text" name="category" placeholder="Category" />
+    <input type="date" name="fromDate" />
+    <input type="date" name="toDate" />
+    <button type="submit">Filter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Category</th>
+            <th>Production Date</th>
+            <th>Farmer</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>                <!-- Adjust property names -->
+                <td>@product.Category</td>
+                <td>@product.ProductionDate.ToShortDateString()</td>
+                <td>@product.Farmer.FullName</td>     <!-- Assuming Farmer has FullName -->
+            </tr>
+        }
+    </tbody>
+</table>

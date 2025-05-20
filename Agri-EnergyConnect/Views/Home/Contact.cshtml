@@ -1,0 +1,66 @@
+@model Agri_EnergyConnect.Models.Message
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="page-background"></div>
+
+<div class="form-container">
+    <h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success text-center" style="margin-bottom: 20px;">
+            @TempData["Success"]
+        </div>
+    }
+
+    <form asp-controller="Home" asp-action="Contact" method="post">
+        <div class="form-group">
+            <label asp-for="Organization">Select Organization Subdivision:</label>
+            <select asp-for="Organization" class="form-control">
+                <option value="">-- Select --</option>
+                <option>Farmer</option>
+                <option>Employee</option>
+                <option>GreenTech Supplier</option>
+                <option>Sustainibility Advocate</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ToEmail">Suggested Email:</label>
+            <select asp-for="ToEmail" class="form-control">
+                <option value="">-- Select --</option>
+                <option>admin.example@gmail.com</option>
+                <option>careers.example@gmail.com</option>
+                <option>suggestions.example@gmail.com</option>
+                <option>general.example@gmail.com</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="FromNameAndSurname">Name & Surname:</label>
+            <input asp-for="FromNameAndSurname" class="form-control" placeholder="Enter your full name" />
+            <span asp-validation-for="FromNameAndSurname" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="FromEmail">Email Address:</label>
+            <input asp-for="FromEmail" type="email" class="form-control" placeholder="Enter your email" />
+            <span asp-validation-for="FromEmail" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Text">Message:</label>
+            <textarea asp-for="Text" rows="5" class="form-control" placeholder="Enter your message"></textarea>
+            <span asp-validation-for="Text" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

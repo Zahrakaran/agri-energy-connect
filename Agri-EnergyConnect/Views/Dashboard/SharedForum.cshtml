@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Agri_EnergyConnect.Models.ForumPost>
+
+<h2>Collaboration Forum</h2>
+
+<form asp-action="SharedForum" method="post">
+    <div class="form-group">
+        <label for="content">New Post</label>
+        <textarea name="content" class="form-control" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Post</button>
+</form>
+
+<hr />
+
+@foreach (var post in Model.OrderByDescending(p => p.PostedAt))
+{
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">@post.AuthorName</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@post.PostedAt.ToLocalTime()</h6>
+            <p class="card-text">@post.Content</p>
+        </div>
+    </div>
+}
+
