@@ -1,0 +1,64 @@
+﻿using Agri_EnergyConnect.Data;
+using Agri_EnergyConnect.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+using System.Threading.Tasks;
+
+[Authorize(Roles = "Farmer")]
+public class ProductController : Controller
+{
+    private readonly ApplicationDbContext _context;
+    private readonly UserManager<AppUser> _userManager;
+
+    public ProductController(ApplicationDbContext context, UserManager<AppUser> userManager)
+    {
+        _context = context;
+        _userManager = userManager;
+    }
+
+    // GET: Product/AddProduct
+    public async Task<IActionResult> AddProduct()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        var farmer = _context.Farmers.FirstOrDefault(f => f.IdentityUserId == user.Id);
+
+        if (farmer == null)
+            return NotFound("Farmer profile not found.");
+
+        var product = new Product
+        {
+            FarmerId = farmer.Id
+        };
+
+        return View(product);
+    }
+
+    // POST: Product/AddProduct
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> AddProduct(Product product)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        var farmer = _context.Farmers.FirstOrDefault(f => f.IdentityUserId == user.Id);
+
+        if (farmer == null)
+            return NotFound("Farmer profile not found.");
+
+        if (ModelState.IsValid)
+        {
+            // Assign FarmerId server-side to avoid tampering
+            product.FarmerId = farmer.Id;
+
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Product added successfully!";
+            return RedirectToAction("FarmerDashboard", "Dashboard");
+        }
+
+        return View(product);
+    }
+}
+

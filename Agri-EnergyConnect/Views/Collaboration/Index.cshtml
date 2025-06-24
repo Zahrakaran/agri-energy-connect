@@ -1,0 +1,44 @@
+﻿@model List<Agri_EnergyConnect.Models.ForumPost>
+
+@{
+    ViewData["Title"] = "Collaboration Space";
+}
+
+<div class="container my-5">
+    <h2 class="mb-4 text-center">Collaboration Space</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            No collaboration posts have been made yet. Be the first to post!
+        </div>
+    }
+    else
+    {
+        <div class="list-group mb-4">
+            @foreach (var post in Model)
+            {
+                <div class="list-group-item list-group-item-action flex-column align-items-start mb-3 shadow-sm rounded">
+                    <div class="d-flex w-100 justify-content-between mb-2">
+                        <h5 class="mb-1">@post.AuthorName</h5>
+                        <small class="text-muted">@post.PostedAt.ToLocalTime().ToString("g")</small>
+                    </div>
+                    <p class="mb-1">@post.Content</p>
+                    <small class="text-muted">Posted in Collaboration Space</small>
+                </div>
+            }
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Index" method="post">
+                <div class="mb-3">
+                    <label for="content" class="form-label">Add a new post</label>
+                    <textarea class="form-control" id="content" name="content" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Post</button>
+            </form>
+        </div>
+    </div>
+</div>

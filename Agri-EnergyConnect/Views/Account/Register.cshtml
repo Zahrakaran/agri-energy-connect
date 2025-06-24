@@ -47,6 +47,12 @@
         <span asp-validation-for="Location"></span>
     </div>
 
+        <div class="form-group">
+            <label asp-for="ContactNumber"></label>
+            <input asp-for="ContactNumber" class="form-control" />
+            <span asp-validation-for="ContactNumber" class="text-danger"></span>
+        </div>
+
     <div>
         <label asp-for="Position">Employee Position (Optional)</label>
         <input asp-for="Position" />

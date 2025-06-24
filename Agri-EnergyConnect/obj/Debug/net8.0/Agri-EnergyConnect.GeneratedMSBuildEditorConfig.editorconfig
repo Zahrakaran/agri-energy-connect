@@ -38,20 +38,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Dashboard/EmployeeDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEVtcGxveWVlRGFzaGJvYXJkLmNzaHRtbA==
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/AdminDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5EYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Dashboard/FarmerDashboard.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEZhcm1lckRhc2hib2FyZC5jc2h0bWw=
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Collaboration/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGFib3JhdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Dashboard/Marketplace.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXE1hcmtldHBsYWNlLmNzaHRtbA==
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/EmployeeDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVEYXNoYm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Dashboard/SharedForum.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXFNoYXJlZEZvcnVtLmNzaHRtbA==
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/FarmerDashboard/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyRGFzaGJvYXJkXEFkZFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/FarmerDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Farmer/AddFarmer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFybWVyXEFkZEZhcm1lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Home/Contact.cshtml]
@@ -70,8 +78,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQ2Fyb3VzZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Products/FilterProducts.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRmlsdGVyUHJvZHVjdHMuY3NodG1s
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Marketplace.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Marketplace/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFya2V0cGxhY2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Product/FilterProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxGaWx0ZXJQcm9kdWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/ProfileDashboard/ViewProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZURhc2hib2FyZFxWaWV3UHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/SharedForum.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkRm9ydW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Dr. Karan/source/repos/Agri-EnergyConnect/Agri-EnergyConnect/Views/Shared/Error.cshtml]

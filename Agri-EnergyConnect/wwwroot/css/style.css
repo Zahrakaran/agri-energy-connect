@@ -1,0 +1,76 @@
+﻿/* General Styles */
+
+ body
+
+{
+    background-color: #d5e3af !important; /* force override */
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+/* Navbar */
+.navbar {
+    background-color: #155c26 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white !important;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #92b451;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.dashboard-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #f8f9fa; /* light gray background */
+    color: #155c26; /* dark green text */
+    text-decoration: none;
+    box-shadow: 0 0.25rem 0.75rem rgba(21, 92, 38, 0.15);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+    .dashboard-card h5,
+    .dashboard-card i {
+        color: inherit; /* inherit the text color */
+        transition: color 0.3s ease;
+    }
+
+    .dashboard-card:hover {
+        background-color: #155c26; /* dark green background */
+        color: white; /* white text */
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+
+        .dashboard-card:hover h5,
+        .dashboard-card:hover i {
+            color: white;
+        }
+
+html, body {
+    height: 100%;
+    overflow: auto; /* ensure scrolling is allowed */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #73521b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+

@@ -1,0 +1,50 @@
+﻿@model Agri_EnergyConnect.Models.AppUser
+
+@{
+    ViewData["Title"] = "View Profile";
+    var fullName = Model.FullName;
+    var farmer = Model.FarmerProfile;
+    var employee = Model.EmployeeProfile;
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <h2 class="mb-4">Welcome to your profile, @fullName</h2>
+
+    @if (farmer != null)
+    {
+        <div class="card">
+            <div class="card-header bg-success text-white">
+                Farmer Profile
+            </div>
+            <div class="card-body">
+                <p><strong>Full Name:</strong> @farmer.FullName</p>
+                <p><strong>Email:</strong> @farmer.Email</p>
+                <p><strong>Location:</strong> @farmer.Location</p>
+                <p><strong>Contact Number:</strong> @farmer.ContactNumber</p>
+                <p><strong>Products:</strong> @farmer.Products?.Count() ?? 0</p>
+            </div>
+        </div>
+    }
+    else if (employee != null)
+    {
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                Employee Profile
+            </div>
+            <div class="card-body">
+                <p><strong>Full Name:</strong> @employee.FullName</p>
+                <p><strong>Position:</strong> @employee.Position</p>
+                <p><strong>Email:</strong> @employee.Email</p>
+                <p><strong>Contact Number:</strong> @employee.ContactNumber</p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning mt-3">
+            No profile information found.
+        </div>
+    }
+</div>

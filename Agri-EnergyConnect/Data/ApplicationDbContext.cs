@@ -1,20 +1,169 @@
 ﻿using Agri_EnergyConnect.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore; 
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Agri_EnergyConnect.Data
 {
     public class ApplicationDbContext : IdentityDbContext<AppUser>
     {
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options) { }
+            : base(options) { }
 
         public DbSet<Farmer> Farmers { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<ForumPost> ForumPosts { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+            base.OnModelCreating(modelBuilder);
 
+            // SQLite-specific column type fix
+            if (Database.IsSqlite())
+            {
+                foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+                {
+                    foreach (var property in entityType.GetProperties())
+                    {
+                        if (property.ClrType == typeof(string))
+                        {
+                            property.SetColumnType("TEXT");
+                        }
+                    }
+                }
+            }
+        
+    
+
+        modelBuilder.Entity<Product>().HasData(
+    new Product
+    {
+        Id = 1,
+        Name = "Organic Compost",
+        Category = "Fertilizer",
+        Description = "Eco-friendly compost made from organic waste.",
+        Price = 120.00m,
+        ProductionDate = new DateTime(2024, 5, 20),
+        FarmerId = 1
+    },
+    new Product
+    {
+        Id = 2,
+        Name = "Drip Irrigation Kit",
+        Category = "Irrigation",
+        Description = "Complete drip irrigation system for small farms.",
+        Price = 950.00m,
+        ProductionDate = new DateTime(2024, 6, 10),
+        FarmerId = 1
     }
+);
+
+
+            // Farmer relationship
+            modelBuilder.Entity<Farmer>()
+                .HasOne(f => f.IdentityUser)
+                .WithOne(u => u.FarmerProfile)
+                .HasForeignKey<Farmer>(f => f.IdentityUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Employee relationship
+            modelBuilder.Entity<Employee>()
+                .HasOne(e => e.IdentityUser)
+                .WithOne(u => u.EmployeeProfile)
+                .HasForeignKey<Employee>(e => e.IdentityUserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Seed AppUser for Nomsa (Farmer)
+            modelBuilder.Entity<AppUser>().HasData(new AppUser
+            {
+                Id = "880243aa-9d2a-4ec5-b50b-11c9805b76e5",
+                FullName = "Nomsa Dlamini",
+                UserName = "nomsa@agri.com",
+                NormalizedUserName = "NOMSA@AGRI.COM",
+                Email = "nomsa@agri.com",
+                NormalizedEmail = "NOMSA@AGRI.COM",
+                EmailConfirmed = true,
+                PhoneNumber = "0712345678",
+                PhoneNumberConfirmed = true,
+                SecurityStamp = "5db952e8-61db-4b7d-bb2e-0d0abb1f43c7",
+                PasswordHash = "AQAAAAEAACcQAAAAEFzmKe2T3ru73AUrrqiju4UyYSwFEklATmoeXCcV7x61Qea2CoPoKGO4cuu8eTWrgQ=="
+            });
+
+            // Seed Farmer profile for Nomsa
+            modelBuilder.Entity<Farmer>().HasData(new Farmer
+            {
+                Id = 1,
+                FullName = "Nomsa Dlamini",
+                Email = "nomsa@agri.com",
+                ContactNumber = "0712345678",
+                Location = "Limpopo",
+                IdentityUserId = "880243aa-9d2a-4ec5-b50b-11c9805b76e5"
+            });
+
+            // Seed AppUser for John (Employee)
+            modelBuilder.Entity<AppUser>().HasData(new AppUser
+            {
+                Id = "a12b34cd-56ef-78gh-90ij-klmnopqrstuv", // New GUID for John
+                FullName = "John Smith",
+                UserName = "john.smith@agri.com",
+                NormalizedUserName = "JOHN.SMITH@AGRI.COM",
+                Email = "john.smith@agri.com",
+                NormalizedEmail = "JOHN.SMITH@AGRI.COM",
+                EmailConfirmed = true,
+                PhoneNumber = "0723456789",
+                PhoneNumberConfirmed = true,
+                SecurityStamp = "c982bc2f-aa5e-4fc2-8b3a-513aa587b54f",
+                PasswordHash = "AQAAAAEAACcQAAAAEFO7SIaVHatyypRann9Kki1DDf8znG6s/CxyaIxOPPtrjv2/b7NfDCFlnSB62u3nIw=="    
+            });
+
+            // Seed Employee profile for John
+            modelBuilder.Entity<Employee>().HasData(new Employee
+            {
+                Id = 1,
+                FullName = "John Smith",
+                Position = "Product Manager",
+                ContactNumber = "0723456789",
+                Email = "john.smith@agri.com",
+                IdentityUserId = "a12b34cd-56ef-78gh-90ij-klmnopqrstuv" // Must match John's AppUser Id
+            });
+
+            modelBuilder.Entity<IdentityRole>().HasData(
+        new IdentityRole
+        {
+            Id = "4e05aeea-4c6a-485f-aac3-7f21c20578ab", // Farmer Role Id
+            Name = "Farmer",
+            NormalizedName = "FARMER"
+        },
+        new IdentityRole
+        {
+            Id = "5a2d7d82-4261-4e1c-8bdb-4d9185f93a05", // Employee Role Id
+            Name = "Employee",
+            NormalizedName = "EMPLOYEE"
+        },
+        new IdentityRole
+        {
+            Id = "5d5863cd-0108-4b11-ac8f-43e1bacb689e", // Admin Role Id
+            Name = "Admin",
+            NormalizedName = "ADMIN"
+        }
+    );
+
+            // Seed user roles (assign roles to users)
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    UserId = "880243aa-9d2a-4ec5-b50b-11c9805b76e5", // Nomsa's User Id
+                    RoleId = "4e05aeea-4c6a-485f-aac3-7f21c20578ab"  // Farmer Role Id
+                },
+                new IdentityUserRole<string>
+                {
+                    UserId = "a12b34cd-56ef-78gh-90ij-klmnopqrstuv", // John's User Id
+                    RoleId = "5a2d7d82-4261-4e1c-8bdb-4d9185f93a05"  // Employee Role Id
+                }
+            );
+        }
+    }
+    
 }

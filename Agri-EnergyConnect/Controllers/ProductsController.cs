@@ -1,36 +1,74 @@
 ﻿using Agri_EnergyConnect.Data;
+using Agri_EnergyConnect.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore; // For Include()
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace Agri_EnergyConnect.Controllers
+[Authorize(Roles = "Farmer")]
+public class ProductController : Controller
 {
-    public class ProductsController : Controller
+    private readonly ApplicationDbContext _context;
+    private readonly UserManager<AppUser> _userManager;
+
+    public ProductController(ApplicationDbContext context, UserManager<AppUser> userManager)
     {
-        private readonly ApplicationDbContext _context;
+        _context = context;
+        _userManager = userManager;
+    }
 
-        public ProductsController(ApplicationDbContext context)
+    // GET: Product/AddProduct
+    public async Task<IActionResult> AddProduct()
+    {
+        var user = await _userManager.GetUserAsync(User);
+        var farmer = _context.Farmers.FirstOrDefault(f => f.IdentityUserId == user.Id);
+
+        if (farmer == null)
+            return NotFound("Farmer profile not found.");
+
+        var product = new Product
         {
-            _context = context;
+            FarmerId = farmer.Id
+        };
+
+        return View(product);
+    }
+
+    // POST: Product/AddProduct
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> AddProduct(Product product)
+    {
+        var user = await _userManager.GetUserAsync(User);
+        var farmer = _context.Farmers.FirstOrDefault(f => f.IdentityUserId == user.Id);
+
+        if (farmer == null)
+            return NotFound("Farmer profile not found.");
+
+        if (ModelState.IsValid)
+        {
+            // Assign FarmerId server-side to avoid tampering
+            product.FarmerId = farmer.Id;
+
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Product added successfully!";
+            return RedirectToAction("FarmerDashboard", "Dashboard");
         }
 
-        public IActionResult FilterProducts(string category, DateTime? fromDate, DateTime? toDate)
-        {
-            var products = _context.Products.Include(p => p.Farmer).AsQueryable();
+        return View(product);
+    }
+    [AllowAnonymous]
+    public IActionResult AllProducts()
+    {
+        var products = _context.Products
+            .Include(p => p.Farmer)
+            .ToList();
 
-            if (!string.IsNullOrEmpty(category))
-                products = products.Where(p => p.Category == category);
-
-            if (fromDate.HasValue)
-                products = products.Where(p => p.ProductionDate >= fromDate.Value);
-
-            if (toDate.HasValue)
-                products = products.Where(p => p.ProductionDate <= toDate.Value);
-
-            return View(products.ToList());
-        }
+        return View(products);
     }
 
 }
