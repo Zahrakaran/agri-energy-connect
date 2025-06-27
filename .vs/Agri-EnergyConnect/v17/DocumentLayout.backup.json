@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{23A5397E-4873-43ED-83B0-9B7BB1743AAE}|Agri-EnergyConnect\\Agri-EnergyConnect.csproj|c:\\users\\dr. karan\\source\\repos\\agri-energyconnect\\agri-energyconnect\\agri-energyconnect.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{23A5397E-4873-43ED-83B0-9B7BB1743AAE}|Agri-EnergyConnect\\Agri-EnergyConnect.csproj|solutionrelative:agri-energyconnect\\agri-energyconnect.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{23A5397E-4873-43ED-83B0-9B7BB1743AAE}|Agri-EnergyConnect\\Agri-EnergyConnect.csproj|c:\\users\\dr. karan\\source\\repos\\agri-energyconnect\\agri-energyconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{23A5397E-4873-43ED-83B0-9B7BB1743AAE}|Agri-EnergyConnect\\Agri-EnergyConnect.csproj|solutionrelative:agri-energyconnect\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -281,11 +285,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Agri-EnergyConnect",
+              "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
+              "RelativeDocumentMoniker": "Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
+              "ToolTip": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
+              "RelativeToolTip": "Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-24T16:44:56.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Program.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Program.cs",
@@ -297,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\appsettings.Development.json",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\appsettings.Development.json",
@@ -310,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\appsettings.json",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\appsettings.json",
@@ -318,12 +334,11 @@
               "RelativeToolTip": "Agri-EnergyConnect\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-18T08:45:14.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T08:45:14.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Data\\ApplicationDbContext.cs",
@@ -331,12 +346,11 @@
               "RelativeToolTip": "Agri-EnergyConnect\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAEYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T07:51:50.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T07:51:50.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Marketplace.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Marketplace.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Marketplace.cshtml",
@@ -348,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Agri-EnergyConnect.csproj",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Agri-EnergyConnect.csproj",
@@ -360,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Shared\\_Layout.cshtml",
@@ -372,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\ProductsController.cs",
@@ -384,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\Employee.cs",
@@ -396,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Farmer.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\Farmer.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\Farmer.cs",
@@ -408,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AddProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Product\\AddProduct.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Product\\AddProduct.cshtml",
@@ -420,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FilterProducts.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Product\\FilterProducts.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Product\\FilterProducts.cshtml",
@@ -432,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\AppUser.cs",
@@ -444,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ViewProfile.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\ProfileDashboard\\ViewProfile.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\ProfileDashboard\\ViewProfile.cshtml",
@@ -456,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Message.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\Message.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\Message.cs",
@@ -468,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\Product.cs",
@@ -480,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AddFarmer.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Farmer\\AddFarmer.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Farmer\\AddFarmer.cshtml",
@@ -492,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Home\\Privacy.cshtml",
@@ -504,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "AddProduct.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\FarmerDashboard\\AddProduct.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\FarmerDashboard\\AddProduct.cshtml",
@@ -516,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Collaboration\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Collaboration\\Index.cshtml",
@@ -528,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Marketplace\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Marketplace\\Index.cshtml",
@@ -540,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Account\\AccessDenied.cshtml",
@@ -552,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Account\\Login.cshtml",
@@ -564,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Account\\Register.cshtml",
@@ -576,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\AdminDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\AdminDashboard\\Index.cshtml",
@@ -588,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\EmployeeDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\EmployeeDashboard\\Index.cshtml",
@@ -600,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\FarmerDashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\FarmerDashboard\\Index.cshtml",
@@ -612,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Home\\Contact.cshtml",
@@ -624,7 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "_Carousel.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Home\\_Carousel.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Home\\_Carousel.cshtml",
@@ -636,7 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "FarmerController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\FarmerController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\FarmerController.cs",
@@ -648,7 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "EmployeeDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\EmployeeDashboardController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\EmployeeDashboardController.cs",
@@ -660,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "AdminDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\AdminDashboardController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\AdminDashboardController.cs",
@@ -672,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "CollaborationController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\CollaborationController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\CollaborationController.cs",
@@ -684,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ContactController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\ContactController.cs",
@@ -696,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\DashboardController.cs",
@@ -708,7 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\AccountController.cs",
@@ -720,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Home\\Index.cshtml",
@@ -732,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\ViewModels\\RegisterViewModel.cs",
@@ -744,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\ViewModels\\LoginViewModel.cs",
@@ -756,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "FileService.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Services\\FileService.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Services\\FileService.cs",
@@ -768,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Shared\\Error.cshtml",
@@ -780,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\_ViewImports.cshtml",
@@ -792,7 +806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\_ViewStart.cshtml",
@@ -804,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "SharedForum.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\SharedForum.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\SharedForum.cshtml",
@@ -816,7 +830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -828,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ForumPost.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\ForumPost.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\ForumPost.cs",
@@ -840,7 +854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "DashboardViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\ViewModels\\DashboardViewModel.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\ViewModels\\DashboardViewModel.cs",
@@ -852,7 +866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Models\\ErrorViewModel.cs",
@@ -864,7 +878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -876,7 +890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "20250521114313_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521114313_InitialCreate.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521114313_InitialCreate.cs",
@@ -888,7 +902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "PasswordHelper.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Helpers\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Helpers\\PasswordHelper.cs",
@@ -900,7 +914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Data\\DbInitializer.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Data\\DbInitializer.cs",
@@ -912,7 +926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "20250521114525_MakePositionNullable.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521114525_MakePositionNullable.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521114525_MakePositionNullable.cs",
@@ -924,7 +938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "MarketplaceController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\MarketplaceController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\MarketplaceController.cs",
@@ -936,7 +950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\HomeController.cs",
@@ -948,7 +962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "FarmerDashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Controllers\\FarmerDashboardController.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Controllers\\FarmerDashboardController.cs",
@@ -960,7 +974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "carousel.css",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\wwwroot\\css\\carousel.css",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\wwwroot\\css\\carousel.css",
@@ -972,7 +986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\wwwroot\\css\\style.css",
@@ -984,7 +998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\wwwroot\\css\\site.css",
@@ -996,7 +1010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "20250522164932_AddEmployeeEntity.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250522164932_AddEmployeeEntity.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250522164932_AddEmployeeEntity.cs",
@@ -1008,7 +1022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "20250522171134_UserRoleSeed.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250522171134_UserRoleSeed.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250522171134_UserRoleSeed.cs",
@@ -1020,7 +1034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "20250522162935_SeedJohnAppUser.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250522162935_SeedJohnAppUser.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250522162935_SeedJohnAppUser.cs",
@@ -1032,7 +1046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "20250521182345_AddContactNumberToEmployee.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521182345_AddContactNumberToEmployee.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521182345_AddContactNumberToEmployee.cs",
@@ -1044,7 +1058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "20250521113713_UpdatEmployeeTbl.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521113713_UpdatEmployeeTbl.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521113713_UpdatEmployeeTbl.cs",
@@ -1055,7 +1069,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "20250521094433_CorrectingTheDB.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521094433_CorrectingTheDB.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521094433_CorrectingTheDB.cs",
@@ -1066,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "zlji3ct4.sql",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\obj\\Debug\\net8.0\\zlji3ct4.sql",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\obj\\Debug\\net8.0\\zlji3ct4.sql",
@@ -1077,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "20250521071635_SeedFixedDate.cs",
               "DocumentMoniker": "C:\\Users\\Dr. Karan\\source\\repos\\Agri-EnergyConnect\\Agri-EnergyConnect\\Migrations\\20250521071635_SeedFixedDate.cs",
               "RelativeDocumentMoniker": "Agri-EnergyConnect\\Migrations\\20250521071635_SeedFixedDate.cs",
@@ -1088,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "Microsoft.NET.TargetFrameworkInference.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.400\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
